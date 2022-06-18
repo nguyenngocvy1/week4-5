@@ -1,7 +1,6 @@
 # Nguyễn Ngọc Vỹ
 # **WEEK 4,5: Làm quen với mạng Neural nhân tạo ứng dụng cho xử lý ảnh**
 # Mục lục:
-- [Nguyễn Ngọc Vỹ](#nguyễn-ngọc-vỹ)
 - [**WEEK 4,5: Làm quen với mạng Neural nhân tạo ứng dụng cho xử lý ảnh**](#week-45-làm-quen-với-mạng-neural-nhân-tạo-ứng-dụng-cho-xử-lý-ảnh)
 - [Mục lục:](#mục-lục)
 - [Nội dung:](#nội-dung)
@@ -178,18 +177,18 @@
 - Module detectnet.py có sẵn trong thư viện jetson-inference
 - Chọn network, input ảnh hoặc video vào, output thu được là ảnh hoặc video đã được detect object(phát hiện nhiều đối tượng, bouding box từng đối tượng, hiện nhãn dán đối tượng, và giá trị tin cậy của đối tượng đó đối với nhãn dán)
 - Một số Pre-trained Detection Models có sẵn:
-- |Model	|CLI argument	|NetworkType enum	|Object classes|
-  |:------|:------------|:----------------|:-------------|
-  |SSD-Mobilenet-v1	|ssd-mobilenet-v1	|SSD_MOBILENET_V1	|91 (COCO classes)|
-  |SSD-Mobilenet-v2	|ssd-mobilenet-v2	|SSD_MOBILENET_V2	|91 (COCO classes)|
-  |SSD-Inception-v2	|ssd-inception-v2	|SSD_INCEPTION_V2	|91 (COCO classes)|
-  |DetectNet-COCO-Dog	|coco-dog	|COCO_DOG	|dogs
-  |DetectNet-COCO-Bottle	|coco-bottle	|COCO_BOTTLE	|bottles|
-  |DetectNet-COCO-Chair	|coco-chair	|COCO_CHAIR	|chairs|
-  |DetectNet-COCO-Airplane	|coco-airplane	|COCO_AIRPLANE	|airplanes|
-  |ped-100	|pednet	|PEDNET	|pedestrians|
-  |multiped-500	|multiped	|PEDNET_MULTI	|pedestrians, luggage|
-  |facenet-120	|facenet	|FACENET	|faces|
+    |Model	|CLI argument	|NetworkType enum	|Object classes|
+    |:------|:------------|:----------------|:-------------|
+    |SSD-Mobilenet-v1	|ssd-mobilenet-v1	|SSD_MOBILENET_V1	|91 (COCO classes)|
+    |SSD-Mobilenet-v2	|ssd-mobilenet-v2	|SSD_MOBILENET_V2	|91 (COCO classes)|
+    |SSD-Inception-v2	|ssd-inception-v2	|SSD_INCEPTION_V2	|91 (COCO classes)|
+    |DetectNet-COCO-Dog	|coco-dog	|COCO_DOG	|dogs
+    |DetectNet-COCO-Bottle	|coco-bottle	|COCO_BOTTLE	|bottles|
+    |DetectNet-COCO-Chair	|coco-chair	|COCO_CHAIR	|chairs|
+    |DetectNet-COCO-Airplane	|coco-airplane	|COCO_AIRPLANE	|airplanes|
+    |ped-100	|pednet	|PEDNET	|pedestrians|
+    |multiped-500	|multiped	|PEDNET_MULTI	|pedestrians, luggage|
+    |facenet-120	|facenet	|FACENET	|faces|
 - Cú pháp: ./detectnet.py --network={CLI argument} {input path and file name} {output path and file name}
 - Ví dụ: ./detectnet.py --network=ssd-inception-v2 input.jpg output.jpg
 ## **VI. QUEST 2:**
