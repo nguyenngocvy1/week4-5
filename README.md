@@ -264,6 +264,8 @@
         3. Bonus: Do khả năng hiển thị của màn hình (điều này rất hiếm xảy ra vì hầu hết màn hình hiện tại đã có giá thành rất rẻ trong khi có tốc độ làm mới rất cao từ 60Hz, 75Hz, 90Hz, 144Hz, 165Hz,... trong khi module chúng ta chỉ cần xử lý ảnh cho ra 60fps là đã rất thành công.) Tốc độ refresh của màn hình chỉ ảnh hưởng fps khi ta xem, không ảnh hưởng fps của video trong file.
       - ped-100 chuyên về nhận diện người đi bộ nên nhận diện người vô cùng tốt, tốt nhất trong các module với khả năng recall 100%. Do module này chỉ để nhận diện người nên không bị lầm người với các vật thể khác, trong khi các module khác lầm trẻ em thành hành lý, lầm chòi thành chiếc dù, lầm tảng đá thành ô tô.
       - multiped-500 chuyên về nhận diện người và hành lý cho khả năng nhận diện người cũng rất tốt nhưng thỉnh thoảng nhầm giữa trẻ em đi cùng người lớn thành hành lý.
+      - Các mạng càng phức tạp trích xuất đặc trưng càng tốt nhưng tốc độ càng chậm. Không thể nào có mạng vừa có độ chính xác cao lại vừa có tốc độ tính toán nhanh.
+      - Tính toán càng nhanh thì độ chính xác càng giảm và ngược lại. Tùy vào mục đích sử dụng mà lựa chọn loại mạng phù hợp. Cần real-time, cần tốc độ nhanh thì nên dùng Mobilenet.
 # Tài liệu tham khảo:
 1. http://tutorials.aiclub.cs.uit.edu.vn/index.php/2020/04/28/phan-biet-bai-toan-trong-cv/?fbclid=IwAR09N4yNjlOEp8XIlhgwcbEsMlf5Fe7wKkxSq93Rq3JeabqsdVnJxgcxAII
 2. https://cs231n.github.io/classification/
